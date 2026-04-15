@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motivation Model Visualizer</title>
+    <title>Motivation Model Coach</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['Fraunces', 'serif'],
             },
             colors: {
-              'do-primary': '#3b82f6', // Blue
-              'do-soft': '#dbeafe',
-              'be-primary': '#8b5cf6', // Violet
-              'be-soft': '#ede9fe',
-              'feel-primary': '#ec4899', // Pink
-              'feel-soft': '#fce7f3',
-              'dark-bg': '#0f172a',
-              'card-bg': '#1e293b',
+              'do-primary': '#48d6ff',
+              'be-primary': '#f8b4d9',
+              'feel-primary': '#ffd166',
+              'dark-bg': '#050b16',
+              'card-bg': '#0f1a2a',
             }
           }
         }
@@ -29,8 +30,9 @@
     </script>
     <style>
       body {
-        background-color: #0f172a;
+        background-color: #050b16;
         color: #f8fafc;
+        font-family: "Plus Jakarta Sans", sans-serif;
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
@@ -38,14 +40,14 @@
         height: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1e293b; 
+        background: #0f1a2a; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #475569; 
+        background: #234159; 
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #64748b; 
+        background: #325671; 
       }
     </style>
   <script type="importmap">
@@ -63,5 +65,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
